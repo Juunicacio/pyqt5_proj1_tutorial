@@ -150,8 +150,8 @@ class MyCustomLabel(QLabel):
 
         # Draw Image
         turtle_width = 50
-        turtle_heigth = 40
-        painter.drawImage(QRectF((self.get_width()/2 - turtle_width/2 +3),LAYERS_LEVEL[0]-2,turtle_width,turtle_heigth), QtGui.QImage(os.path.join(FILEPATH , TURTLE_IMG)), QRectF(0,0,turtle_width,turtle_heigth))             
+        turtle_height = 40
+        painter.drawImage(QRectF((self.get_width()/2 - turtle_width/2 +3),LAYERS_LEVEL[0]-2,turtle_width,turtle_height), QtGui.QImage(os.path.join(FILEPATH , TURTLE_IMG)), QRectF(0,0,turtle_width,turtle_height))             
 
 class MyCustomMainWindow(QMainWindow):    
     def __init__(self):
